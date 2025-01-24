@@ -1,0 +1,8 @@
+using System;
+class Program {
+    static void Main() {
+        Console.Write("Enter a sentence: ");
+        string sentence = Console.ReadLine();
+        Console.WriteLine("Word Count: " + sentence.Split(' ').Length);
+    }
+}
