@@ -1,0 +1,8 @@
+using System;
+class Program {
+    static void Main() {
+        Console.Write("Enter a binary number: ");
+        string binary = Console.ReadLine();
+        Console.WriteLine("Decimal: " + Convert.ToInt32(binary, 2));
+    }
+}
