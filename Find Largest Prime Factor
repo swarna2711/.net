@@ -1,0 +1,12 @@
+using System;
+class Program {
+    static void Main() {
+        Console.Write("Enter a number: ");
+        int num = Convert.ToInt32(Console.ReadLine()), i = 2;
+        while (num > 1) {
+            if (num % i == 0) num /= i;
+            else i++;
+        }
+        Console.WriteLine("Largest Prime Factor: " + i);
+    }
+}
