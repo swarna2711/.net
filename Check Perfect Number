@@ -1,0 +1,10 @@
+using System;
+class Program {
+    static void Main() {
+        Console.Write("Enter a number: ");
+        int num = Convert.ToInt32(Console.ReadLine()), sum = 0;
+        for (int i = 1; i < num; i++)
+            if (num % i == 0) sum += i;
+        Console.WriteLine(num == sum ? "Perfect Number" : "Not Perfect Number");
+    }
+}
