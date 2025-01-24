@@ -1,0 +1,9 @@
+using System;
+class Program {
+    static int GCD(int a, int b) => b == 0 ? a : GCD(b, a % b);
+    static void Main() {
+        Console.Write("Enter two numbers: ");
+        int a = Convert.ToInt32(Console.ReadLine()), b = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("GCD: " + GCD(a, b));
+    }
+}
