@@ -1,0 +1,7 @@
+using System;
+class Program {
+    static void Main() {
+        Random rnd = new Random();
+        Console.WriteLine("Random Number: " + rnd.Next(1, 100));
+    }
+}
