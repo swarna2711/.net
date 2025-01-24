@@ -1,0 +1,13 @@
+using System;
+class Program {
+    static void Main() {
+        Console.Write("Enter a number: ");
+        int num = Convert.ToInt32(Console.ReadLine()), temp = num, sum = 0, digits = num.ToString().Length;
+        while (temp > 0) {
+            int digit = temp % 10;
+            sum += (int)Math.Pow(digit, digits);
+            temp /= 10;
+        }
+        Console.WriteLine(num == sum ? "Armstrong" : "Not Armstrong");
+    }
+}
