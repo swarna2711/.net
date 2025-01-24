@@ -1,0 +1,7 @@
+using System;
+class Program {
+    static void Main() {
+        int a = 10, b = 20, c = 15;
+        Console.WriteLine("Largest: " + Math.Max(a, Math.Max(b, c)));
+    }
+}
