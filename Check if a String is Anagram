@@ -1,0 +1,11 @@
+using System;
+using System.Linq;
+class Program {
+    static void Main() {
+        Console.Write("Enter first string: ");
+        string str1 = new string(Console.ReadLine().ToLower().OrderBy(c => c).ToArray());
+        Console.Write("Enter second string: ");
+        string str2 = new string(Console.ReadLine().ToLower().OrderBy(c => c).ToArray());
+        Console.WriteLine(str1 == str2 ? "Anagram" : "Not Anagram");
+    }
+}
